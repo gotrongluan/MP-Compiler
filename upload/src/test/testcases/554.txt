@@ -1,9 +1,0 @@
-
-            var x:boolean;
-            procedure main();
-            begin
-                x := true;
-                putBool(not not not not not not not not not not not not x);
-                putString("PPL 2018");
-            end
-            

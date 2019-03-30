@@ -1,9 +1,0 @@
-
-            procedure main();
-            begin
-                if True then
-                    return;
-                else
-                    return;
-            end
-            

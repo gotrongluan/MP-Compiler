@@ -1,9 +1,0 @@
-
-            procedure main();
-            begin
-                my_var[0] := 0.5;
-                my_var[1] := my_var[0];
-                putFloat(my_var[1]);
-            end
-            var my_var: array[-2 .. 5] of real;
-            

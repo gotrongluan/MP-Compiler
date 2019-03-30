@@ -1,8 +1,0 @@
-
-            procedure main();
-            begin
-                putBool(true or else false);
-                putBool(true or else true);
-                putBool(false or else false);
-            end
-            

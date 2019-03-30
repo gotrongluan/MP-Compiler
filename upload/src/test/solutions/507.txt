@@ -1,6 +1,0 @@
-false
-true
-false
-0
-34
--34

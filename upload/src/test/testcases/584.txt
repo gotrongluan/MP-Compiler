@@ -1,8 +1,0 @@
-
-            procedure main();
-            begin
-                putString("PHP");
-                putSTring("Python");
-                putString("Javascript");
-            end
-            

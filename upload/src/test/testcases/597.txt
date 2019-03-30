@@ -1,8 +1,0 @@
-
-            procedure main();
-            begin
-                putString("Nguyen ");
-                putSTring("Trong ");
-                putString("Luan");
-            end
-            

@@ -1,8 +1,0 @@
-
-            procedure main();
-            begin
-                putString("Java");
-                putSTring("Ada");
-                putString("Scala");
-            end
-            
