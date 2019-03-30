@@ -1,0 +1,23 @@
+
+            procedure foo(a, b:integer);
+            begin
+                putIntLn(a);
+                putInt(b);
+            end
+
+            procedure main();
+            var t: array[0 .. 10] of integer;
+            begin
+                with i: integer; do
+                    for i := 0 to 10 do
+                        t[i] := fast(i);
+                foo(fast(9), t[10]);
+            end
+
+            function fast(n:integer):integer;
+            begin
+                if n = 0 then
+                    return 0;
+                return (n div 7) + (n mod 7) + fast(n - 1);
+            end
+            

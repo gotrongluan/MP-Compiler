@@ -1,0 +1,32 @@
+
+            var a, b:integer;
+            function x():integer;
+            begin
+                a := a - 2;
+                b := b + 1;
+                return b;
+            end
+            function y():integer;
+            begin
+                a := a + 1;
+                b := b - 1;
+                return a;
+            end
+            function z():boolean;
+            begin
+                a := a - b + 1;
+                return a < b;
+            end
+            function t():boolean;
+            begin
+                return b < a;
+            end
+            procedure main();
+            begin
+                a := 15;
+                b := 6;
+                putBool(((x() - y()) > 2) and ((x() div y()) <> (b div a)) or z() and (x() < b) or t() and ((x() mod y()) = 3));
+                putInt(a);
+                putInt(b);
+            end
+            

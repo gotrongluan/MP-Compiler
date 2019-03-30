@@ -1,0 +1,31 @@
+
+            var t, l: array[0 .. 6] of integer;
+            function foo(n:integer):array[0 .. 6] of integer;
+            begin
+                if n > 0 then
+                    return t;
+                else
+                    return l;
+            end
+
+            procedure initial();
+            var i:integer;
+            begin
+                for i := 0 to 6 do
+                begin
+                    t[i] := i;
+                    l[i] := t[i] * 2;
+                end
+            end
+
+            procedure main();
+            var y: integer;
+            begin
+                initial();
+                y := foo(2)[0];
+                putInt(y);
+                t[0] := 100;
+                y := foo(2)[0];
+                putInt(y);
+            end
+            

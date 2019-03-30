@@ -1,0 +1,21 @@
+
+            function min(a,b,c: real):real;
+            begin
+                if a < b then
+                    if a < c then
+                        return a;
+                    else
+                        return c;
+                else
+                    if b < c then
+                        return b;
+                    else
+                        return c;
+            end
+            procedure main();
+            begin
+                putFloat(min(212.5, 1611, -1000.5));
+                putFloat(min(2.2, 2.2, 2.2));
+                putFloat(min(-10, -10, -10));
+            end
+            

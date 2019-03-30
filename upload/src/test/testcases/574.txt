@@ -1,0 +1,28 @@
+
+            function foo(a, b: array[0 .. 2] of integer):array[0 .. 5] of integer;
+            var res: array[0 .. 5] of integer;
+                i: integer;
+            begin
+                for i:= 0 to 5 do
+                begin
+                    if i < 3 then
+                        res[i] := a[i];
+                    else
+                        res[i] := b[i - 3];
+                end
+                return res;
+            end
+            var a, b: array[0 .. 2] of integer;
+            procedure main();
+            var i:integer;
+            begin
+                a[0] := 2;
+                a[1] := 12;
+                a[2] := 2000;
+                b[0] := 16;
+                b[1] := 11;
+                b[2] := 1998;
+                for i := 0 to 5 do
+                    putInt(foo(a, b)[i]);
+            end
+            

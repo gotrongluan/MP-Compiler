@@ -1,0 +1,23 @@
+
+            function getString(n:integer):string;
+            begin
+                if n > 0 then
+                    if n < 10 then
+                        return "PHP";
+                    else
+                        return "Python";
+                else
+                    if n > -10 then
+                        return "C++";
+                    else
+                        return "Java";
+            end
+
+            procedure main();
+            begin
+                putString(getString(100));
+                putString(getString(5));
+                putString(getString(-2));
+                putString(getString(-20));
+            end
+            

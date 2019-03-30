@@ -1,0 +1,34 @@
+
+            function foo(n:real):string;
+            begin
+                with m:real; do
+                begin
+                    m := n * 1.5;
+                    if m > 0 then
+                    begin
+                        if m > 10 then
+                            return "PHP";
+                        else
+                            return "Python";
+                    end
+                    else
+                    begin
+                        if m < -10 then
+                            if m < -20 then
+                                return "Ruby";
+                            else
+                                return "R";
+                        else
+                            return "C++";
+                    end
+                end
+            end
+            
+            procedure main();
+            begin
+                putStringLn(foo(2.5));
+                putStringLn(foo(-1));
+                putStringLn(foo(-0.5));
+                putStringLn(foo(200));  
+            end
+            

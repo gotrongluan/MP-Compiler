@@ -1,0 +1,8 @@
+
+            procedure main();
+            begin
+                putString("Pascal");
+                putSTring("Smalltalk");
+                putString("Ruby");
+            end
+            

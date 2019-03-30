@@ -1,0 +1,16 @@
+
+            function factorial(n:integer):integer;
+            begin
+                if (n = 0) or (n = 1) then
+                    return 1;
+                else
+                    return n * factorial(n - 1);
+            end
+            procedure main();
+            var t: integer;
+            begin
+                t := 6;
+                putInt(factorial(4));
+                putInt(factorial(t));
+            end
+            

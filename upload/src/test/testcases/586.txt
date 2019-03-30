@@ -1,0 +1,8 @@
+
+            procedure main();
+            begin
+                putString("C#");
+                putSTring("C++");
+                putString("C");
+            end
+            

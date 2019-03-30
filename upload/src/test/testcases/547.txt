@@ -1,0 +1,23 @@
+
+            function abc():integer;
+            begin
+                a := a + 1;
+                return 2;
+            end
+            function xyz():integer;
+            begin
+                a := a - 2;
+                return 3;
+            end
+            function mnp():integer;
+            begin
+                return a + 2;
+            end
+            var a:integer;
+            procedure main();
+            begin
+                a := 0;
+                putBool(abc() < mnp());
+                putBool(xyz() > a);
+            end
+            

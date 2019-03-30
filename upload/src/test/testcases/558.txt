@@ -1,0 +1,20 @@
+
+            function sum(n:integer):integer;
+            var S:integer;
+            begin
+                S := 0;
+                while n > 0 do
+                begin
+                    S := S + n;
+                    n := n - 1;
+                end
+                return S;
+            end
+            procedure main();
+            var t:integer;
+            begin
+                t := 10;
+                putInt(sum(t));
+                putInt(t);
+            end
+            

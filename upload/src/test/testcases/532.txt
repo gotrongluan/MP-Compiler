@@ -1,0 +1,12 @@
+
+            procedure foo(a,b,c:string);
+            begin
+                putString(a);
+                putSTRING(b);
+                putSTRING(c);
+            end
+            procedure main();
+            begin
+                foo("PHP", "Python", "Scala");
+            end
+            

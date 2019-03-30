@@ -1,0 +1,14 @@
+
+            procedure foo(n:integer; s:string);
+            begin
+                putString(s);
+                if n = 0 then
+                    return;
+                foo(n - 1, s);
+            end
+
+            procedure main();
+            begin
+                foo(4, "Clojure");
+            end
+            

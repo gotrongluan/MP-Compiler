@@ -1,0 +1,16 @@
+
+            PROCEDURE main(); 
+            var arr: array[-10 .. -2] of integer;
+            BEGIN
+                for i := -10 to -2 do
+                begin
+                    arr[i] := i * (-1);
+                end
+                for i := -10 to -2 do
+                begin
+                    if (arr[i] mod 2) = 0 then
+                        putIntLn(arr[i]);
+                end
+            END
+            var i: integer;
+            

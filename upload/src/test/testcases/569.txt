@@ -1,0 +1,22 @@
+
+            function max(x:array[-10 .. -1] of integer):integer;
+            var max, i: integer;
+            begin
+                max := x[-10];
+                for i:= -9 to -1 do
+                    if x[i] > max then
+                        max := x[i];
+                return max;
+            end
+            procedure main();
+            var t: array[-10 .. -1] of integer;
+            begin
+                t[-10] := t[-6] := t[-1] := 25;
+                t[-9] := 6;
+                t[-7] := 77;
+                t[-8] := -222;
+                t[-5] := t[-4] := t[-2] := 100;
+                t[-3] := 25;
+                putInt(max(t));
+            end
+        

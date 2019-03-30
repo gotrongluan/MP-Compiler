@@ -1,0 +1,22 @@
+
+            procedure swap(a,b:integer);
+            var tmp: integer;
+            begin
+                tmp := a;
+                a := b;
+                b := tmp;
+            end
+            var a:integer;
+            procedure main();
+            var b: integer;
+            begin
+                swap(0, 2);
+                a := 100;
+                b := 200;
+                putInt(a);
+                putInt(b);
+                swap(a, b);
+                putInt(a);
+                putInt(b);
+            end
+            

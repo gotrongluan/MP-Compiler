@@ -1,0 +1,14 @@
+
+            procedure main();
+            var i: integer;
+            begin
+                i := 0;
+                while i < 1000 do
+                begin
+                    if i >= 10 then
+                        return;
+                    putInt(i);
+                    i := i + 1;
+                end
+            end
+            

@@ -1,0 +1,19 @@
+
+            function foo(a, b: integer):integer;
+            begin
+                if a > b then
+                    return 0;
+                return 1;
+            end
+            procedure main();
+            var j, i: integer;
+            begin
+                for i := foo(2, 12) to 10 do
+                begin
+                    if i < 4 then
+                        continue;
+                    putInt(i);
+                end
+                putStringLn("HCMUT");
+            end
+            

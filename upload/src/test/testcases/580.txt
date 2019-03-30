@@ -1,0 +1,27 @@
+
+            function toString(n:integer):string;
+            begin
+                if n = 1 then
+                    return "1";
+                else
+                    return "0";
+            end
+            procedure toBits(n:integer);
+            begin
+                if n = 1 then
+                    putString("1");
+                else
+                begin
+                    toBits(n div 2);
+                    putString(toString(n mod 2));
+                end
+            end
+            procedure main();
+            begin
+                toBits(12);
+                putLn();
+                toBits(7);
+                putLn();
+                toBits(33);
+            end
+            

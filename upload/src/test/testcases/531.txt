@@ -1,0 +1,25 @@
+
+            function foo():integer;
+            begin
+                with t:boolean; do
+                begin
+                    with h:boolean; do
+                    begin
+                        with u:boolean; do
+                        begin
+                            t := true;
+                            h := u := not t;
+                            if t or h and u then
+                                return 0;
+                            else
+                                return 1;
+                        end
+                    end
+                end
+            end
+
+            procedure main();
+            begin
+                putIntLn(foo());
+            end
+            

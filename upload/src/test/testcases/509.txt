@@ -1,0 +1,23 @@
+
+            var l,u,a,n: boolean;
+            procedure main();
+            var x: integer;
+                y: real;
+            begin
+                t[0] := t[1] := t[t[t[2]]] - 2;
+                putIntLn(t[1]);
+                x := t[0] mod 7;
+                y := x div 2 + t[2] mod 3;
+                putFloat(y);
+                l := False and (y < 0);
+                u := l or l;
+                a := True and u;
+                n := (x <= y) and not (t[0] <> t[1]);
+                putBool(l);
+                putBool(u);
+                putBool(a);
+                putBool(n);
+            end
+
+            var t: array[0 .. 2] of integer;
+            

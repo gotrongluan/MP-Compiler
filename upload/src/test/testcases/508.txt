@@ -1,0 +1,21 @@
+
+            function foo(n: integer): integer;
+            begin
+                return n - 1;
+            end
+
+            procedure main();
+            var x: array[0 .. 2] of real;
+            begin
+                x[0] := 2.5;
+                t := -x[0];
+                x[1] := foo(2);
+                x[2] := x[1] := foo(5);
+                putFloat(t);
+                putFloat(x[0]);
+                putFloat(x[1]);
+                putFloat(x[2]);
+            end
+
+            var t: real;
+            

@@ -1,0 +1,9 @@
+
+            procedure main();
+            begin
+                putString("Huynh ");
+                putSTring("Thi ");
+                putString("Oanh ");
+                putString("Trinh");
+            end
+            

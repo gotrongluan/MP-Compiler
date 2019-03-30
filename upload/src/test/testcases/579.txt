@@ -1,0 +1,19 @@
+
+            function count(n:integer):integer;
+            var d:integer;
+            begin
+                d := 0;
+                while (n > 0) do
+                begin
+                    d := d + 1;
+                    n := n div 10;
+                end
+                return d;
+            end
+            procedure main();
+            begin
+                putInt(count(1611931));
+                putInt(count(02122000));
+                putInt(count(16111998));
+            end
+            

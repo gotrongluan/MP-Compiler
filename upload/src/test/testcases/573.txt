@@ -1,0 +1,21 @@
+
+            function pow(a, n:integer):integer;
+            var y:integer;
+            begin
+                if n = 0 then return 1;
+                if n = 1 then return a;
+                y := pow(a, n div 2);
+                if (n mod 2) <> 0 then
+                    return a * y * y;
+                else
+                    return y * y;
+            end
+            procedure main();
+            begin
+                putInt(pow(2, 0));
+                putInt(pow(3, 3));
+                putInt(pow(100, 1));
+                putInt(pow(2, 7));
+                putInt(pow(5, 2));
+            end
+            

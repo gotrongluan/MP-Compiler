@@ -1,0 +1,29 @@
+
+            function isPrime(n:integer):boolean;
+            var i:integer;
+            begin
+                if n < 2 then
+                    return false;
+                else
+                begin
+                    if n = 2 then
+                        return true;
+                    else
+                    begin
+                        for i := 2 to (n - 1) do
+                            if (n mod i) = 0 then
+                                return false;
+                        return true;
+                    end
+                end
+            end
+
+            procedure main();
+            begin
+                putBool(isPrime(2));
+                putBool(isPrime(-1));
+                putBool(isPrime(7));
+                putBool(isPrime(23));
+                putBool(isPrime(100));
+            end
+            

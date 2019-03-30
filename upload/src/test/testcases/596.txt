@@ -1,0 +1,9 @@
+
+            procedure main();
+            begin
+                putString("Vo ");
+                putSTring("Ngoc ");
+                putString("Quynh ");
+                putString("Nhu");
+            end
+            

@@ -1,0 +1,23 @@
+
+            var t:array[0 .. 6] of integer;
+            function getArray():array[0 .. 6] of integer;
+            begin
+                with i:integer; do
+                    for i := 0 to 6 do
+                        t[i] := i mod 2;
+                return t;
+            end
+
+            procedure main();
+            var y: integer;
+                k: array[0 .. 6] of integer;
+            begin
+                y := getArray()[5];
+                putInt(y);
+                k := getArray();
+                k[2] := 1611931;
+                putInt(t[2]);
+                y := getArray()[0];
+                putInt(k[2]);
+            end
+            

@@ -1,0 +1,17 @@
+
+            function sum(x: array[0 .. 4] of integer;i:integer):integer;
+            begin
+                if i = 0 then
+                    return x[0];
+                return x[i] + sum(x, i - 1);
+            end
+            procedure main();
+            var t: array[0 .. 4] of integer;
+            begin
+                t[0] := 3;
+                t[1] := t[2] := -10;
+                t[3] := 4;
+                t[4] := 22;
+                putInt(sum(t, 4));
+            end
+            

@@ -1,0 +1,24 @@
+
+            function doubleAndSum(arr:array[0 .. 10] of integer):integer;
+            var i, S:integer;
+            begin
+                S := 0;
+                for i := 0 to 10 do
+                begin
+                    arr[i] := arr[i] * 2;
+                    S := S + arr[i];
+                end
+                return S;
+            end
+            var arr: array[0 .. 10] of integer;
+            procedure main();
+            var i: integer;
+            begin
+                for i := 0 to 10 do
+                    arr[i] := i;
+                putInt(doubleAndSum(arr));
+                putLn();
+                for i := 0 to 10 do
+                    putInt(arr[i]);
+            end
+            

@@ -1,0 +1,20 @@
+
+            procedure foo(x:array[0 .. 5] of real);
+            begin
+                with i:integer; do
+                    for i := 0 to 5 do
+                        putFloat(x[i]);
+            end
+
+            procedure main();
+            var y: array[0 .. 5] of real;
+            begin
+                y[0] := 1.5;
+                y[1] := -1.5;
+                y[2] := y[1] - y[0];
+                y[3] := 2;
+                y[4] := 10.5;
+                y[5] := 2.25;
+                foo(y);
+            end
+            

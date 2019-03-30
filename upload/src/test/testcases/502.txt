@@ -1,0 +1,15 @@
+
+            var a: integer;
+                b: real;
+                c: boolean;
+            procedure Main();
+            begin
+                a := 0;
+                b := 1.5;
+                c := TRUE;
+                putInt(a);
+                putFLoat(b);
+                putBOOL(c);
+                putString("abc");
+            end
+            

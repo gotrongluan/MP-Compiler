@@ -1,0 +1,31 @@
+
+            function fibonancci(n: integer):integer;
+            begin
+                if n < 0 then
+                    return -1;
+                if (n = 0) or (N = 1) then
+                    return N;
+                else
+                    return fibonancci(n - 1) + fibonancci(n - 2);
+            end
+            procedure main();
+            var t: array[0 .. 5] of integer;
+            begin
+                with i: integer; do
+                begin
+                    for i:= 0 to 5 do
+                        t[i] := fibonancci(i);
+                    with r: array[0 .. 5] of integer; do
+                    begin
+                        for i:= 5 downto 0 do
+                        begin
+                            r[i] := i;
+                            if (r[i] <= t[i]) then
+                                putFloatLn(i);
+                            else
+                                putStringLn("Java");
+                        end
+                    end
+                end  
+            end
+        

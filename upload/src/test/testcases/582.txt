@@ -1,0 +1,10 @@
+
+            procedure main();
+            begin
+                putInt(0);
+                putInt(-1);
+                putInt(-100);
+                putInt(100000);
+                putInt(20000000);
+            end
+            

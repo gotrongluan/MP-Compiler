@@ -1,0 +1,24 @@
+
+            function foo(n: integer): integer;
+            begin
+                if n < 5 then
+                    return n + 5;
+                else
+                    return n - 5;
+            end
+            var t: integer;
+                x: real;
+            procedure main();
+            var y:array[-100 .. -0] of real;
+            begin
+                y[0] := 1.2;
+                x := y[-1] := y[0] + foo(2);
+                y[-2] := t := foo(0);
+                y[-100] := foo(2) - foo(1) + foo(t);
+                putFLoatLn(y[-100]);
+                putIntLn(t);
+                putFLoatLn(x);
+                putFloat(y[-1]);
+                putFloat(y[-2]);
+            end
+            
